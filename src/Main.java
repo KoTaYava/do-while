@@ -63,26 +63,33 @@ public class Main {
         System.out.println("Задача 6");
         int initial = 15_000;
         int currentAmount2 = initial;
-        for (int i = 1 ; i <= 108; i++){
+        for (int i = 1; i <= 108; i++) {
             currentAmount2 += initial;
             currentAmount2 *= 1.07;
-            if(i % 6 == 0 ){
+            if (i % 6 == 0) {
                 System.out.println("Месяц " + i + " сумма накопления " + currentAmount2);
             }
         }
         System.out.println("Задача 7");
         int fridayDat = 5;
         int monch = 31;
-        for (int r = fridayDat; r <= monch; r= r + 7){
+        for (int r = fridayDat; r <= monch; r = r + 7) {
             System.out.println("Сегодня пятница " + r + "-e число. Подговить отчет. ");
         }
+        System.out.println("Задача 8");
+
+        int currentYear = 2023;
+        for (int i = 0; i < currentYear + 100; i += 79) {
+            if (i > currentYear - 200) {
+                System.out.println(i);
+
+
+            }
 
 
         }
-
-
     }
-
+}
 
 
 
